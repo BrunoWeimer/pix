@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Pagamento via PIX</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">  <!-- Corrige os acentos -->
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
         .pix-code { background: #f0f0f0; padding: 15px; border-radius: 10px; margin: 20px auto; max-width: 500px; word-wrap: break-word; }
@@ -11,23 +11,23 @@
 </head>
 <body>
     <h1>Pagamento via PIX</h1>
-    <p>Escaneie o QR Code ou copie o código abaixo:</p>
+    <p>Escaneie o QR Code ou copie o cÃ³digo abaixo:</p>
     
-    <!-- Substitua pelo SEU QR CODE (gerado em https://qr-code-generator.com) -->
+    <!-- QR Code (substitua pelo seu) -->
     <img src="SEU_QR_CODE_AQUI.png" alt="QR Code PIX" width="200">
     
     <div class="pix-code">
         <strong>Chave PIX (Copie e Cole):</strong><br>
-        <span id="pix-key">00020126850014br.gov.bcb.pix0136b408ab69-410a-49f7-98dd-46b82fa919800223Mensalidade Bola no Pé520400005303986540525.005802BR5919Bruno Arthur Weimer6008Brasilia62230519daqr1812827946071676304C7EB</span>
+        <span id="pix-key">00020126850014br.gov.bcb.pix0136b408ab69-410a-49f7-98dd-46b82fa919800223Mensalidade Bola no PÃ©520400005303986540525.005802BR5919Bruno Arthur Weimer6008Brasilia62230519daqr1812827946071676304C7EB</span>
     </div>
     
-    <button onclick="copyPixKey()">Copiar Código PIX</button>
+    <button onclick="copyPixKey()">Copiar CÃ³digo PIX</button>
     
     <script>
         function copyPixKey() {
             const pixKey = document.getElementById('pix-key');
             navigator.clipboard.writeText(pixKey.innerText)
-                .then(() => alert('Código PIX copiado! Cole no seu banco.'));
+                .then(() => alert('CÃ³digo PIX copiado! Cole no seu banco.'));
         }
     </script>
 </body>
